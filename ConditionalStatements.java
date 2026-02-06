@@ -1,5 +1,5 @@
 public class ConditionalStatements {
-    public static int subtract(int a, int b){
+    static int subtract(int a, int b){
         int c = 0;
         if(a > b){
             c = a - b;

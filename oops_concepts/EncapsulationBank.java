@@ -1,7 +1,7 @@
 package oops_concepts;
 
 public class EncapsulationBank {
-    private int balance;
+    protected int balance;
     public void setBalance(int amount){
         balance = amount;
     }

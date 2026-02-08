@@ -16,14 +16,14 @@ public class MapInterface {
         hashMap.put(3000, "Ram");
         hashMap.put(2007,"Satya");
         treeMap.putAll(hashMap);
-
+        System.out.println(hashMap);
         linkedHashMap.put(3003, "Priya");
         linkedHashMap.put(3001, "harshith");
         linkedHashMap.put(3002,"Darshan");
         linkedHashMap.put(3000, "Ram");
         linkedHashMap.put(2007,"Satya");
-        System.out.println(hashMap);
-        // System.out.println(treeMap);
+        
+        System.out.println(treeMap);
         System.out.println(linkedHashMap);
     }
 }

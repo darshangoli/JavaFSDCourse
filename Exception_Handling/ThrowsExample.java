@@ -1,3 +1,4 @@
+package Exception_Handling;
 public class ThrowsExample {
     void checkMarks(int marks){
         if(marks < 0 || marks > 100){

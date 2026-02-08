@@ -1,3 +1,4 @@
+package Exception_Handling;
 public class ExceptionHandling {
     int divide(int a) throws ArithmeticException{
         int result = a/0;
@@ -8,6 +9,13 @@ public class ExceptionHandling {
         int result = arr[6];
         return result;
     }
+    void voting(int age){
+        if(age < 18){  
+            throw new IllegalArgumentException("age should be greater than 18");
+        }
+        System.out.println("eligible to vote");
+    }
+
     public static void main(String[] args) {
         ExceptionHandling obj = new ExceptionHandling();
         try{
@@ -20,6 +28,12 @@ public class ExceptionHandling {
             obj.divide(5);
         }catch (ArithmeticException e){
             System.out.println("Should not be divided by 0");
+        }
+
+        try{
+            obj.voting(2);
+        }catch(IllegalArgumentException e){
+            System.out.println(e.getMessage());
         }
         
     }

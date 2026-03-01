@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Enter a Number</h3>
+    <input type="text" id="num" placeholder="Enter a Number">
+    <br><br>
+    <button onclick="printNaturalNumbers()">Submit</button>
+    <br><br>
+    <p id="result">output will be displayed here</p>
+    <script>
+        function printNaturalNumbers(){
+            let n = document.getElementById("num").value;
+            let output = "";
+            for(let i=1; i<=n; i++){
+                output = output + i + " ";
+            }
+            document.getElementById("result").innerHTML = output
+        }
+    </script>
+</body>
+</html>

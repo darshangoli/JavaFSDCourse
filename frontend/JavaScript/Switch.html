@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statement</title>
+</head>
+<body>
+    <h3>Enter a Number (1 to 7)</h3>
+    <input type="text" id="num" placeholder="Enter a Number">
+    <br><br>
+    <button onclick="showDay()">Submit</button>
+    <br><br>
+    <p id="result">output will be displayed here</p>
+    <script>
+        function showDay(){
+            let number = document.getElementById("num").value;
+            let output = "";
+
+            switch(number){
+                case "1":
+                output = "sunday";
+                break;
+
+                case "2":
+                output = "monday";
+                break;
+
+                case "3":
+                output = "tuesday";
+                break;
+
+                case "4":
+                output = "wednesday";
+                break;
+
+                case "5":
+                output = "thursday";
+                break;
+
+                case "6":
+                output = "friday";
+                break;
+
+                case "7":
+                output = "saturday";
+                break;
+
+                default:
+                output = "invalid number. Enter the number between 1 to 7"
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

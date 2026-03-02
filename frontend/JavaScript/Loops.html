@@ -16,9 +16,24 @@
         function printNaturalNumbers(){
             let n = document.getElementById("num").value;
             let output = "";
-            for(let i=1; i<=n; i++){
+            // for loop
+            // for(let i=1; i<=n; i++){
+            //     output = output + i + " ";
+            // }
+            
+            // while loop
+            //let i=1;
+            //while(i<=n){
+            //    output = output + i + " ";
+            //    i++;
+            //}
+
+            // do-while loop
+            let i=1;
+            do{
                 output = output + i + " ";
-            }
+                i++;
+            }while(i<=n)
             document.getElementById("result").innerHTML = output
         }
     </script>

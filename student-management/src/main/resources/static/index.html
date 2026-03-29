@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="glass-panel">
+            <h1>Student Portal</h1>
+        </header>
+
+        <main>
+            <section class="form-section glass-panel">
+                <h2 id="form-title">Add New Student</h2>
+                <form id="student-form">
+                    <input type="hidden" id="student-id">
+                    <div class="input-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label for="course">Course</label>
+                        <input type="text" id="course" required placeholder="Computer Science">
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn secondary" id="btn-cancel" style="display: none;" onclick="resetForm()">Cancel</button>
+                        <button type="submit" class="btn primary" id="btn-submit">Add Student</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="table-section glass-panel">
+                <h2>Enrolled Students</h2>
+                <div class="table-wrapper">
+                    <table id="students-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Course</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="student-list">
+                            <!-- Students will be dynamically injected here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
